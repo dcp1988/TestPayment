@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paypal Payment</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<form action="EOCheckout" method="get">
+ <main id="cart-main">
+        <div class="site-title text-center">
+            <h1 class="font-title">Shopping Cart</h1>
+        </div>
+
+        <div class="container">
+            <div class="grid">
+                <div class="col-1">
+                    <div class="flex item justify-content-between">
+                        <div class="flex">
+                            <div class="title">
+                                <h3>SanDisk PenDrive</h3>
+                                <span>Electronics</span>
+                            </div>
+                        </div><br/>
+                        <div class="price">
+                            <h4 class="text-red">2</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="subtotal text-center">
+                        <h3>Price Details</h3>
+
+                        <ul>
+                            <li class="flex justify-content-between">
+                                <label for="price">Products ( 1 item ) : </label>
+                                <span>2</span>
+                            </li>
+                            <li class="flex justify-content-between">
+                                <label for="price">Delivery Charges : </label>
+                                <span>Free</span>
+                            </li>
+                            
+                            <li class="flex justify-content-between">
+                                <label for="price">Amout Payable : </label>
+                                <input type="text" class="text-red font-title" value="2" id='amount' name='amount'>
+                                <label for="currency">Currency : </label>
+                                <input type="text" class="text-red font-title" value="USD" id='currency' name='currency'>
+                            </li>
+                        </ul>
+                       <input type="submit" value="PayPal"  style ="padding:10px;width:50%"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </form>
+</body>
+</html>
